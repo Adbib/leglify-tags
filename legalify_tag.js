@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-expressions */
 !(function () {
   const t = {
     config: {
@@ -273,8 +274,10 @@
             const e = `${t.config.defaultAppBaseUrl}${t.config.domainPath}`,
               o = t.functions.getStoreName(),
               n = new URLSearchParams({ storeName: o }),
-              //   a = await fetch(`${e}?${n}`),
-              c = { domain: "http://localhost:3000/" }; // await a.json();
+              a = await fetch(`${e}?${n}`),
+              c = { domain: "http://localhost:3000/" }, // await a.json();
+              cc = await a.json();
+              console.log("reqoo", cc)
             if (c.domain) {
               t.variables.checkoutDomain = c.domain;
               try {

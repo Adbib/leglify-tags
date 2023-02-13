@@ -4,7 +4,7 @@
     config: {
       dataAttrAppUrl: "data-checkify-url",
       dataAttrName: "data-checkify",
-      defaultAppBaseUrl: "https://legalify-shopify.fly.dev/",
+      defaultAppBaseUrl: "https://legalify.pro/",
       domainPath: "/api/public/checkoutDomain",
     },
     variables: { isPreventDefaultHandlers: !0, isCheckoutProcessing: !1 },
@@ -275,7 +275,7 @@
               o = t.functions.getStoreName(),
               n = new URLSearchParams({ storeName: o }),
               //   a = await fetch(`${e}?${n}`),
-              c = { domain: "https://legalify-shopify.fly.dev/" }; // await a.json();
+              c = { domain: "https://legalify.pro/" }; // await a.json();
             if (c.domain) {
               t.variables.checkoutDomain = c.domain;
               try {
